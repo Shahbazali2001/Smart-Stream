@@ -1,3 +1,5 @@
-export {Header} from "./Header.jsx";
-export {Footer} from "./Header.jsx";
-export {Card} from "./Card.jsx";
+import Header from "./Header";
+import Footer from "./Footer";
+import Card from "./Card";
+
+export { Header, Footer, Card };
