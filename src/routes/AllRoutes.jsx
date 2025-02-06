@@ -1,11 +1,23 @@
-import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { MovieDetail, MovieList, Search, PageNotFound } from '../pages'
+// import { Header, Footer } from '../components'
 
-const AllRoutes = () => {
+
+function AllRoutes() {
   return (
     <>
-      <h1>All Routes</h1>
+      <Routes>
+        <Route path="/" element={<MovieList />} />
+        <Route path="/movies/popular" element={<MovieList />} />
+        <Route path="/movies/top" element={<MovieList />} />
+        <Route path="/movies/upcoming" element={<MovieList />} />
+
+        <Route path="/movie/:id" element={<MovieDetail />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </>
   )
 }
 
-export default AllRoutes
+export default AllRoutes 
