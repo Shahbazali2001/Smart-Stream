@@ -1,0 +1,3 @@
+API KEY : 8ddd64157ba3bcfbae125b38939b6dd6 
+Bse URL : http://api.themoviedb.org/3/movie/top_rated?api_key=8ddd64157ba3bcfbae125b38939b6dd6
+Base URL : http://api.themoviedb.org/3

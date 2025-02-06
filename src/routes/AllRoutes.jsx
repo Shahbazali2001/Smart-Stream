@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { MovieDetail, MovieList, Search, PageNotFound } from '../pages'
+import { MovieDetail, MovieList, Search, PageNotFound } from '../pages';
 // import { Header, Footer } from '../components'
 
 
