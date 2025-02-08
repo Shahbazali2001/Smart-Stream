@@ -1,27 +1,8 @@
-import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
+import useFetch from "../hooks/useFetch";
 
-const MovieList = () => {
-const [movies, setMovies] = useState([]);
-
-useEffect(() => {
-  async function fetchMovies() {
-    const response = await fetch("http://api.themoviedb.org/3/movie/top_rated?api_key=8ddd64157ba3bcfbae125b38939b6dd6");
-    const data = await response.json();
-    setMovies(data.results);
-  }
-  fetchMovies();
-
-}, []);
-
-
-
-
-
-
-
-
-
+const MovieList = ({apiPath}) => {
+  const { data: movies } = useFetch(apiPath);
   return (
     <main>
       <section className="max-w-7xl mx-auto py-7">
@@ -38,3 +19,4 @@ useEffect(() => {
 };
 
 export default MovieList;
+ 
