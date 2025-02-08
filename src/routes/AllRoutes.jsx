@@ -13,7 +13,7 @@ function AllRoutes() {
         <Route path="/movies/upcoming" element={<MovieList apiPath="movie/upcoming" />} />
 
         <Route path="/movie/:id" element={<MovieDetail />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/search" element={<Search apiPath="search/movie" />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
